@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #000000;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 400px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Purchase Form For Diamond</h1>
+    <form action="proses-pembelian.html" method="post">
+        <input type="text" name="Xbox id" placeholder="Insert your Xbox id" required><br>
+        <input type="text" name="coordinates" placeholder="Insert your home coordinates" required><br>
+        <input type="number" name="Total" placeholder="Total" min="1" required><br>
+        <select name="delivery" required>
+            <option value="" disabled selected>Choose a delivery method</option>
+            <option value="Express">Express (1 Hour)</option>
+            <option value="reguler">Regular (3+ Hours)</option>
+        </select><br>
+        <button type="submit"class="button" style="background-color: #1fe02f;">Send</button>
+    </form>
+    <a href="Market.html"class="button">Back to Marketplace</a>
+</body>
+</html>
